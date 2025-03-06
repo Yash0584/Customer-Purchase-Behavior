@@ -1,0 +1,3252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>28600b9931e74a62a30700c2fc649c8a</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" id="jQdKOyR_StvJ">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#import python libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div>
+</div>
+<div class="cell code" id="JcMWXnzJWWuK">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#import csv file</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>pd.read_csv(<span class="st">&#39;Sales Data.csv&#39;</span>,encoding<span class="op">=</span><span class="st">&#39;unicode_escape&#39;</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="IerLgr2uWueo" data-outputId="7596cd65-4525-4495-c78f-3705082518b7">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="3">
+<pre><code>(11251, 15)</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="ew9tCovLWvzJ" data-outputId="92a6e550-b7a1-403c-9584-2eb66c1f84f8">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>       User_ID    Cust_name Product_ID Gender Age Group  Age  Marital_Status  \
+0      1002903    Sanskriti  P00125942      F     26-35   28               0   
+1      1000732       Kartik  P00110942      F     26-35   35               1   
+2      1001990        Bindu  P00118542      F     26-35   35               1   
+3      1001425       Sudevi  P00237842      M      0-17   16               0   
+4      1000588         Joni  P00057942      M     26-35   28               1   
+...        ...          ...        ...    ...       ...  ...             ...   
+11246  1000695      Manning  P00296942      M     18-25   19               1   
+11247  1004089  Reichenbach  P00171342      M     26-35   33               0   
+11248  1001209        Oshin  P00201342      F     36-45   40               0   
+11249  1004023       Noonan  P00059442      M     36-45   37               0   
+11250  1002744      Brumley  P00281742      F     18-25   19               0   
+
+                State      Zone       Occupation Product_Category  Orders  \
+0         Maharashtra   Western       Healthcare             Auto       1   
+1      Andhra Pradesh  Southern             Govt             Auto       3   
+2       Uttar Pradesh   Central       Automobile             Auto       3   
+3           Karnataka  Southern     Construction             Auto       2   
+4             Gujarat   Western  Food Processing             Auto       2   
+...               ...       ...              ...              ...     ...   
+11246     Maharashtra   Western         Chemical           Office       4   
+11247         Haryana  Northern       Healthcare       Veterinary       3   
+11248  Madhya Pradesh   Central          Textile           Office       4   
+11249       Karnataka  Southern      Agriculture           Office       3   
+11250     Maharashtra   Western       Healthcare           Office       3   
+
+        Amount  Status  unnamed1  
+0      23952.0     NaN       NaN  
+1      23934.0     NaN       NaN  
+2      23924.0     NaN       NaN  
+3      23912.0     NaN       NaN  
+4      23877.0     NaN       NaN  
+...        ...     ...       ...  
+11246    370.0     NaN       NaN  
+11247    367.0     NaN       NaN  
+11248    213.0     NaN       NaN  
+11249    206.0     NaN       NaN  
+11250    188.0     NaN       NaN  
+
+[11251 rows x 15 columns]
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:261}"
+id="tQUKN83eX_ph" data-outputId="ea36101e-2d56-4958-b5c8-31cb9069615c">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+
+  <div id="df-cc1b8cae-99ef-48de-9dd0-b92bb24da1a0" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User_ID</th>
+      <th>Cust_name</th>
+      <th>Product_ID</th>
+      <th>Gender</th>
+      <th>Age Group</th>
+      <th>Age</th>
+      <th>Marital_Status</th>
+      <th>State</th>
+      <th>Zone</th>
+      <th>Occupation</th>
+      <th>Product_Category</th>
+      <th>Orders</th>
+      <th>Amount</th>
+      <th>Status</th>
+      <th>unnamed1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1002903</td>
+      <td>Sanskriti</td>
+      <td>P00125942</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>28</td>
+      <td>0</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Healthcare</td>
+      <td>Auto</td>
+      <td>1</td>
+      <td>23952.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1000732</td>
+      <td>Kartik</td>
+      <td>P00110942</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>35</td>
+      <td>1</td>
+      <td>Andhra Pradesh</td>
+      <td>Southern</td>
+      <td>Govt</td>
+      <td>Auto</td>
+      <td>3</td>
+      <td>23934.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1001990</td>
+      <td>Bindu</td>
+      <td>P00118542</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>35</td>
+      <td>1</td>
+      <td>Uttar Pradesh</td>
+      <td>Central</td>
+      <td>Automobile</td>
+      <td>Auto</td>
+      <td>3</td>
+      <td>23924.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1001425</td>
+      <td>Sudevi</td>
+      <td>P00237842</td>
+      <td>M</td>
+      <td>0-17</td>
+      <td>16</td>
+      <td>0</td>
+      <td>Karnataka</td>
+      <td>Southern</td>
+      <td>Construction</td>
+      <td>Auto</td>
+      <td>2</td>
+      <td>23912.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1000588</td>
+      <td>Joni</td>
+      <td>P00057942</td>
+      <td>M</td>
+      <td>26-35</td>
+      <td>28</td>
+      <td>1</td>
+      <td>Gujarat</td>
+      <td>Western</td>
+      <td>Food Processing</td>
+      <td>Auto</td>
+      <td>2</td>
+      <td>23877.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-cc1b8cae-99ef-48de-9dd0-b92bb24da1a0')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-cc1b8cae-99ef-48de-9dd0-b92bb24da1a0 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-cc1b8cae-99ef-48de-9dd0-b92bb24da1a0');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-25db9087-c2d2-46b4-8c3d-60bc39634a64">
+  <button class="colab-df-quickchart" onclick="quickchart('df-25db9087-c2d2-46b4-8c3d-60bc39634a64')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-25db9087-c2d2-46b4-8c3d-60bc39634a64 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="ETBekXU3YVLo" data-outputId="13bb2ed3-75d0-43ff-cc48-098c3b90c151">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.columns</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<pre><code>Index([&#39;User_ID&#39;, &#39;Cust_name&#39;, &#39;Product_ID&#39;, &#39;Gender&#39;, &#39;Age Group&#39;, &#39;Age&#39;,
+       &#39;Marital_Status&#39;, &#39;State&#39;, &#39;Zone&#39;, &#39;Occupation&#39;, &#39;Product_Category&#39;,
+       &#39;Orders&#39;, &#39;Amount&#39;, &#39;Status&#39;, &#39;unnamed1&#39;],
+      dtype=&#39;object&#39;)</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Ph-kcfp-Y7q7" data-outputId="b40ef9a5-12e9-41e3-e60d-314bfb288124">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 11251 entries, 0 to 11250
+Data columns (total 15 columns):
+ #   Column            Non-Null Count  Dtype  
+---  ------            --------------  -----  
+ 0   User_ID           11251 non-null  int64  
+ 1   Cust_name         11251 non-null  object 
+ 2   Product_ID        11251 non-null  object 
+ 3   Gender            11251 non-null  object 
+ 4   Age Group         11251 non-null  object 
+ 5   Age               11251 non-null  int64  
+ 6   Marital_Status    11251 non-null  int64  
+ 7   State             11251 non-null  object 
+ 8   Zone              11251 non-null  object 
+ 9   Occupation        11251 non-null  object 
+ 10  Product_Category  11251 non-null  object 
+ 11  Orders            11251 non-null  int64  
+ 12  Amount            11239 non-null  float64
+ 13  Status            0 non-null      float64
+ 14  unnamed1          0 non-null      float64
+dtypes: float64(3), int64(4), object(8)
+memory usage: 1.3+ MB
+</code></pre>
+</div>
+</div>
+<div class="cell code" id="fHEdBRb5ZDDH">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df.drop([<span class="st">&#39;Status&#39;</span>,<span class="st">&#39;unnamed1&#39;</span>],axis<span class="op">=</span><span class="dv">1</span>,inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:461}"
+id="Jhp283JEaho8" data-outputId="6204acdd-e207-484c-f0f7-3859e5a66f8b">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pd.isnull(df).sum()</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>pd.isnull(df)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="11">
+
+  <div id="df-e8af4a55-37e7-47f5-9640-0915156e6c4c" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User_ID</th>
+      <th>Cust_name</th>
+      <th>Product_ID</th>
+      <th>Gender</th>
+      <th>Age Group</th>
+      <th>Age</th>
+      <th>Marital_Status</th>
+      <th>State</th>
+      <th>Zone</th>
+      <th>Occupation</th>
+      <th>Product_Category</th>
+      <th>Orders</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>11246</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11247</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11248</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11249</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11250</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<p>11251 rows × 13 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e8af4a55-37e7-47f5-9640-0915156e6c4c')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-e8af4a55-37e7-47f5-9640-0915156e6c4c button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-e8af4a55-37e7-47f5-9640-0915156e6c4c');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-84a1e246-548f-4b23-8b3a-e50aee356a63">
+  <button class="colab-df-quickchart" onclick="quickchart('df-84a1e246-548f-4b23-8b3a-e50aee356a63')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-84a1e246-548f-4b23-8b3a-e50aee356a63 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" id="pwhe2IqWaln6">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># drop null values</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df.dropna(inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:495}"
+id="sM5q_igDd2M_" data-outputId="8f2833c7-64a9-48d2-e997-c5903a8b4299">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="15">
+
+  <div id="df-70ba0b69-d2d4-4f3f-84bc-7be4bc9fb096" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User_ID</th>
+      <th>Cust_name</th>
+      <th>Product_ID</th>
+      <th>Gender</th>
+      <th>Age Group</th>
+      <th>Age</th>
+      <th>Marital_Status</th>
+      <th>State</th>
+      <th>Zone</th>
+      <th>Occupation</th>
+      <th>Product_Category</th>
+      <th>Orders</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1002903</td>
+      <td>Sanskriti</td>
+      <td>P00125942</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>28</td>
+      <td>0</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Healthcare</td>
+      <td>Auto</td>
+      <td>1</td>
+      <td>23952.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1000732</td>
+      <td>Kartik</td>
+      <td>P00110942</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>35</td>
+      <td>1</td>
+      <td>Andhra Pradesh</td>
+      <td>Southern</td>
+      <td>Govt</td>
+      <td>Auto</td>
+      <td>3</td>
+      <td>23934.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1001990</td>
+      <td>Bindu</td>
+      <td>P00118542</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>35</td>
+      <td>1</td>
+      <td>Uttar Pradesh</td>
+      <td>Central</td>
+      <td>Automobile</td>
+      <td>Auto</td>
+      <td>3</td>
+      <td>23924.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1001425</td>
+      <td>Sudevi</td>
+      <td>P00237842</td>
+      <td>M</td>
+      <td>0-17</td>
+      <td>16</td>
+      <td>0</td>
+      <td>Karnataka</td>
+      <td>Southern</td>
+      <td>Construction</td>
+      <td>Auto</td>
+      <td>2</td>
+      <td>23912.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1000588</td>
+      <td>Joni</td>
+      <td>P00057942</td>
+      <td>M</td>
+      <td>26-35</td>
+      <td>28</td>
+      <td>1</td>
+      <td>Gujarat</td>
+      <td>Western</td>
+      <td>Food Processing</td>
+      <td>Auto</td>
+      <td>2</td>
+      <td>23877.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>11246</th>
+      <td>1000695</td>
+      <td>Manning</td>
+      <td>P00296942</td>
+      <td>M</td>
+      <td>18-25</td>
+      <td>19</td>
+      <td>1</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Chemical</td>
+      <td>Office</td>
+      <td>4</td>
+      <td>370.0</td>
+    </tr>
+    <tr>
+      <th>11247</th>
+      <td>1004089</td>
+      <td>Reichenbach</td>
+      <td>P00171342</td>
+      <td>M</td>
+      <td>26-35</td>
+      <td>33</td>
+      <td>0</td>
+      <td>Haryana</td>
+      <td>Northern</td>
+      <td>Healthcare</td>
+      <td>Veterinary</td>
+      <td>3</td>
+      <td>367.0</td>
+    </tr>
+    <tr>
+      <th>11248</th>
+      <td>1001209</td>
+      <td>Oshin</td>
+      <td>P00201342</td>
+      <td>F</td>
+      <td>36-45</td>
+      <td>40</td>
+      <td>0</td>
+      <td>Madhya Pradesh</td>
+      <td>Central</td>
+      <td>Textile</td>
+      <td>Office</td>
+      <td>4</td>
+      <td>213.0</td>
+    </tr>
+    <tr>
+      <th>11249</th>
+      <td>1004023</td>
+      <td>Noonan</td>
+      <td>P00059442</td>
+      <td>M</td>
+      <td>36-45</td>
+      <td>37</td>
+      <td>0</td>
+      <td>Karnataka</td>
+      <td>Southern</td>
+      <td>Agriculture</td>
+      <td>Office</td>
+      <td>3</td>
+      <td>206.0</td>
+    </tr>
+    <tr>
+      <th>11250</th>
+      <td>1002744</td>
+      <td>Brumley</td>
+      <td>P00281742</td>
+      <td>F</td>
+      <td>18-25</td>
+      <td>19</td>
+      <td>0</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Healthcare</td>
+      <td>Office</td>
+      <td>3</td>
+      <td>188.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>11239 rows × 13 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-70ba0b69-d2d4-4f3f-84bc-7be4bc9fb096')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-70ba0b69-d2d4-4f3f-84bc-7be4bc9fb096 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-70ba0b69-d2d4-4f3f-84bc-7be4bc9fb096');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-f3d6d39f-abaf-407a-9c2b-3b4e267e000e">
+  <button class="colab-df-quickchart" onclick="quickchart('df-f3d6d39f-abaf-407a-9c2b-3b4e267e000e')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-f3d6d39f-abaf-407a-9c2b-3b4e267e000e button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+  <div id="id_c69cc322-78c4-4ad2-9afb-5fbc7f25b102">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('df')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_c69cc322-78c4-4ad2-9afb-5fbc7f25b102 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('df');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" id="8Yu6Kr3Cd4-g">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#change data type</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Amount&#39;</span>]<span class="op">=</span>df[<span class="st">&#39;Amount&#39;</span>].astype(<span class="st">&#39;int&#39;</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Fcp7_S2zeFDR" data-outputId="3a9c47db-a7cf-44a7-8b7a-5c0bde16fa17">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Amount&#39;</span>].dtypes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+<pre><code>dtype(&#39;int64&#39;)</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="IwhImQcGeJuD" data-outputId="e9e5a511-6fa8-473c-c787-51a6109d579b">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df.columns</span></code></pre></div>
+<div class="output execute_result" data-execution_count="18">
+<pre><code>Index([&#39;User_ID&#39;, &#39;Cust_name&#39;, &#39;Product_ID&#39;, &#39;Gender&#39;, &#39;Age Group&#39;, &#39;Age&#39;,
+       &#39;Marital_Status&#39;, &#39;State&#39;, &#39;Zone&#39;, &#39;Occupation&#39;, &#39;Product_Category&#39;,
+       &#39;Orders&#39;, &#39;Amount&#39;],
+      dtype=&#39;object&#39;)</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:495}"
+id="x28XHmJZeMhZ" data-outputId="236a66ff-c821-4021-a466-d87008df33b8">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#rename column</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df.rename(columns<span class="op">=</span>{<span class="st">&#39;Marital_Status&#39;</span>:<span class="st">&#39;Shaadi&#39;</span>})</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+
+  <div id="df-bb079c7b-3593-4f0c-9fd4-8615025e00c3" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User_ID</th>
+      <th>Cust_name</th>
+      <th>Product_ID</th>
+      <th>Gender</th>
+      <th>Age Group</th>
+      <th>Age</th>
+      <th>Shaadi</th>
+      <th>State</th>
+      <th>Zone</th>
+      <th>Occupation</th>
+      <th>Product_Category</th>
+      <th>Orders</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1002903</td>
+      <td>Sanskriti</td>
+      <td>P00125942</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>28</td>
+      <td>0</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Healthcare</td>
+      <td>Auto</td>
+      <td>1</td>
+      <td>23952</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1000732</td>
+      <td>Kartik</td>
+      <td>P00110942</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>35</td>
+      <td>1</td>
+      <td>Andhra Pradesh</td>
+      <td>Southern</td>
+      <td>Govt</td>
+      <td>Auto</td>
+      <td>3</td>
+      <td>23934</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1001990</td>
+      <td>Bindu</td>
+      <td>P00118542</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>35</td>
+      <td>1</td>
+      <td>Uttar Pradesh</td>
+      <td>Central</td>
+      <td>Automobile</td>
+      <td>Auto</td>
+      <td>3</td>
+      <td>23924</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1001425</td>
+      <td>Sudevi</td>
+      <td>P00237842</td>
+      <td>M</td>
+      <td>0-17</td>
+      <td>16</td>
+      <td>0</td>
+      <td>Karnataka</td>
+      <td>Southern</td>
+      <td>Construction</td>
+      <td>Auto</td>
+      <td>2</td>
+      <td>23912</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1000588</td>
+      <td>Joni</td>
+      <td>P00057942</td>
+      <td>M</td>
+      <td>26-35</td>
+      <td>28</td>
+      <td>1</td>
+      <td>Gujarat</td>
+      <td>Western</td>
+      <td>Food Processing</td>
+      <td>Auto</td>
+      <td>2</td>
+      <td>23877</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>11246</th>
+      <td>1000695</td>
+      <td>Manning</td>
+      <td>P00296942</td>
+      <td>M</td>
+      <td>18-25</td>
+      <td>19</td>
+      <td>1</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Chemical</td>
+      <td>Office</td>
+      <td>4</td>
+      <td>370</td>
+    </tr>
+    <tr>
+      <th>11247</th>
+      <td>1004089</td>
+      <td>Reichenbach</td>
+      <td>P00171342</td>
+      <td>M</td>
+      <td>26-35</td>
+      <td>33</td>
+      <td>0</td>
+      <td>Haryana</td>
+      <td>Northern</td>
+      <td>Healthcare</td>
+      <td>Veterinary</td>
+      <td>3</td>
+      <td>367</td>
+    </tr>
+    <tr>
+      <th>11248</th>
+      <td>1001209</td>
+      <td>Oshin</td>
+      <td>P00201342</td>
+      <td>F</td>
+      <td>36-45</td>
+      <td>40</td>
+      <td>0</td>
+      <td>Madhya Pradesh</td>
+      <td>Central</td>
+      <td>Textile</td>
+      <td>Office</td>
+      <td>4</td>
+      <td>213</td>
+    </tr>
+    <tr>
+      <th>11249</th>
+      <td>1004023</td>
+      <td>Noonan</td>
+      <td>P00059442</td>
+      <td>M</td>
+      <td>36-45</td>
+      <td>37</td>
+      <td>0</td>
+      <td>Karnataka</td>
+      <td>Southern</td>
+      <td>Agriculture</td>
+      <td>Office</td>
+      <td>3</td>
+      <td>206</td>
+    </tr>
+    <tr>
+      <th>11250</th>
+      <td>1002744</td>
+      <td>Brumley</td>
+      <td>P00281742</td>
+      <td>F</td>
+      <td>18-25</td>
+      <td>19</td>
+      <td>0</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Healthcare</td>
+      <td>Office</td>
+      <td>3</td>
+      <td>188</td>
+    </tr>
+  </tbody>
+</table>
+<p>11239 rows × 13 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bb079c7b-3593-4f0c-9fd4-8615025e00c3')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-bb079c7b-3593-4f0c-9fd4-8615025e00c3 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-bb079c7b-3593-4f0c-9fd4-8615025e00c3');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-079b459d-0efe-4e92-b335-4929c08c1104">
+  <button class="colab-df-quickchart" onclick="quickchart('df-079b459d-0efe-4e92-b335-4929c08c1104')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-079b459d-0efe-4e92-b335-4929c08c1104 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:300}"
+id="DdMubeV9fM9I" data-outputId="c3a7a36d-15a2-4065-b328-53d8fcb5a7a6">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use describe() for specific columns</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>df[[<span class="st">&#39;Age&#39;</span>,<span class="st">&#39;Orders&#39;</span>,<span class="st">&#39;Amount&#39;</span>]].describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="21">
+
+  <div id="df-54413606-6e11-4881-b19b-d5962d78e945" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Age</th>
+      <th>Orders</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>11239.000000</td>
+      <td>11239.000000</td>
+      <td>11239.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>35.410357</td>
+      <td>2.489634</td>
+      <td>9453.610553</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>12.753866</td>
+      <td>1.114967</td>
+      <td>5222.355168</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>12.000000</td>
+      <td>1.000000</td>
+      <td>188.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>27.000000</td>
+      <td>2.000000</td>
+      <td>5443.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>33.000000</td>
+      <td>2.000000</td>
+      <td>8109.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>43.000000</td>
+      <td>3.000000</td>
+      <td>12675.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>92.000000</td>
+      <td>4.000000</td>
+      <td>23952.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-54413606-6e11-4881-b19b-d5962d78e945')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-54413606-6e11-4881-b19b-d5962d78e945 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-54413606-6e11-4881-b19b-d5962d78e945');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-4c6be87e-942e-4bf0-84cb-0025377935f9">
+  <button class="colab-df-quickchart" onclick="quickchart('df-4c6be87e-942e-4bf0-84cb-0025377935f9')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-4c6be87e-942e-4bf0-84cb-0025377935f9 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="_TeLyGw1iBZq">
+<p>EXPLORATORY DATA ANALYSIS</p>
+</div>
+<div class="cell markdown" id="GO3PjSiziGhn">
+<p>GENDER</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:449}"
+id="kvIzvwljhOt9" data-outputId="e0f62307-274c-4be7-deee-f47b9d3ab0f6">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a bar chart for gender and it&#39;s count</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>ax<span class="op">=</span>sns.countplot(x<span class="op">=</span><span class="st">&#39;Gender&#39;</span>,data<span class="op">=</span>df)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bars <span class="kw">in</span> ax.containers:</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    ax.bar_label(bars)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/a4b312c3f091b55b79e4b98f98f5c66444c2c2b2.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="6H9b65CX-yYm">
+<p>Univariate:It shows that females are more then men</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:483}"
+id="-NGLU-r8iWpf" data-outputId="08e93940-fab7-40c9-8e02-61c7f8cdc1f2">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plotting a bar chart for gender vs total amount</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>sales_gen<span class="op">=</span>df.groupby([<span class="st">&#39;Gender&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Amount&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Gender&#39;</span>,y<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,data<span class="op">=</span>sales_gen,color<span class="op">=</span><span class="st">&#39;red&#39;</span>)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="co">&#39;&#39;&#39;for bars in sales_gen.containers:</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co">    sales_gen.bar_label(bars)&#39;&#39;&#39;</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="30">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;type&quot;</span><span class="fu">:</span><span class="st">&quot;string&quot;</span><span class="fu">}</span></span></code></pre></div>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/8565357f4d76e3664956dd4811c2a5cbb50368b8.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="LVewhLHk_FEY">
+<p>Bivariate:This graph shows that females spend more amount than
+men</p>
+</div>
+<div class="cell markdown" id="6zaXE0M_nSTS">
+<p>From above graphs we can see that most of the buyers are females and
+even the purchasing power of female are greater than men</p>
+</div>
+<div class="cell markdown" id="-mp7Zis3nfXh">
+<p>Age</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:449}"
+id="jQNUfKoGk5Cc" data-outputId="2a35563c-201b-453e-fae0-9bb9cd32fb0b">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>ax<span class="op">=</span>sns.countplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;Age Group&#39;</span>,hue<span class="op">=</span><span class="st">&#39;Gender&#39;</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bars <span class="kw">in</span> ax.containers:</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  ax.bar_label(bars)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/a94a44706f493440201beacbe60e470476f8c3cb.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="RyIRQwcw_M8_">
+<p>This graph shows that the age group 26-35 have the highest spending
+whereas 0-17 have the least spending</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:589}"
+id="dHU9vOYhoE-l" data-outputId="74736898-1d9c-41d6-bdb9-55c9a575485a">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#total amount vs age group</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>sales_age<span class="op">=</span>df.groupby([<span class="st">&#39;Age Group&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Amount&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Age Group&#39;</span>,y<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,data<span class="op">=</span>sales_age,color<span class="op">=</span><span class="st">&#39;orange&#39;</span>,palette<span class="op">=</span><span class="st">&#39;rocket&#39;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-39-1d4118297b38&gt;:4: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=&#39;Age Group&#39;,y=&#39;Amount&#39;,data=sales_age,color=&#39;orange&#39;,palette=&#39;rocket&#39;)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="39">
+<pre><code>&lt;Axes: xlabel=&#39;Age Group&#39;, ylabel=&#39;Amount&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/5a0b651a870ce95cb7a8d096041137c70bf1f13a.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="FjhjZMFfq2tt">
+<p>This graph shows that the age group 26-35 has spent the most amount
+and 0-17 has done the least spending</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:441}"
+id="nvtCpaLepM4v" data-outputId="2aa23699-e4a2-47de-b261-de4130b2752b">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">#total number of orders from top 10 states</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>sales_state<span class="op">=</span>df.groupby([<span class="st">&#39;State&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Orders&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Orders&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>custom_color<span class="op">=</span>sns.color_palette(<span class="st">&#39;husl&#39;</span>,<span class="dv">10</span>)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">18</span>,<span class="dv">5</span>)})</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>sales_state,x<span class="op">=</span><span class="st">&#39;State&#39;</span>,y<span class="op">=</span><span class="st">&#39;Orders&#39;</span>,palette<span class="op">=</span>custom_color)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-48-9fb3b084c4b0&gt;:5: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=sales_state,x=&#39;State&#39;,y=&#39;Orders&#39;,palette=custom_color)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="48">
+<pre><code>&lt;Axes: xlabel=&#39;State&#39;, ylabel=&#39;Orders&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/92d974c281a3af51d1669081f30d299f043c6407.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="ik64Nu5gtGXX">
+<p>This graph shows that UP has placed the most number of orders and
+Harayana and Gujarat have the least orders placed</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:495}"
+id="ofR9EdD5vQix" data-outputId="9ebe4316-3a07-4fec-9df4-296c33364a63">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Sales&#39;</span>]<span class="op">=</span>df[<span class="st">&#39;Orders&#39;</span>]<span class="op">*</span>df[<span class="st">&#39;Amount&#39;</span>]</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="54">
+
+  <div id="df-d509bad9-315f-4d08-9165-f9386c74fdf7" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>User_ID</th>
+      <th>Cust_name</th>
+      <th>Product_ID</th>
+      <th>Gender</th>
+      <th>Age Group</th>
+      <th>Age</th>
+      <th>Marital_Status</th>
+      <th>State</th>
+      <th>Zone</th>
+      <th>Occupation</th>
+      <th>Product_Category</th>
+      <th>Orders</th>
+      <th>Amount</th>
+      <th>Sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1002903</td>
+      <td>Sanskriti</td>
+      <td>P00125942</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>28</td>
+      <td>0</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Healthcare</td>
+      <td>Auto</td>
+      <td>1</td>
+      <td>23952</td>
+      <td>23952</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1000732</td>
+      <td>Kartik</td>
+      <td>P00110942</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>35</td>
+      <td>1</td>
+      <td>Andhra Pradesh</td>
+      <td>Southern</td>
+      <td>Govt</td>
+      <td>Auto</td>
+      <td>3</td>
+      <td>23934</td>
+      <td>71802</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1001990</td>
+      <td>Bindu</td>
+      <td>P00118542</td>
+      <td>F</td>
+      <td>26-35</td>
+      <td>35</td>
+      <td>1</td>
+      <td>Uttar Pradesh</td>
+      <td>Central</td>
+      <td>Automobile</td>
+      <td>Auto</td>
+      <td>3</td>
+      <td>23924</td>
+      <td>71772</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1001425</td>
+      <td>Sudevi</td>
+      <td>P00237842</td>
+      <td>M</td>
+      <td>0-17</td>
+      <td>16</td>
+      <td>0</td>
+      <td>Karnataka</td>
+      <td>Southern</td>
+      <td>Construction</td>
+      <td>Auto</td>
+      <td>2</td>
+      <td>23912</td>
+      <td>47824</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1000588</td>
+      <td>Joni</td>
+      <td>P00057942</td>
+      <td>M</td>
+      <td>26-35</td>
+      <td>28</td>
+      <td>1</td>
+      <td>Gujarat</td>
+      <td>Western</td>
+      <td>Food Processing</td>
+      <td>Auto</td>
+      <td>2</td>
+      <td>23877</td>
+      <td>47754</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>11246</th>
+      <td>1000695</td>
+      <td>Manning</td>
+      <td>P00296942</td>
+      <td>M</td>
+      <td>18-25</td>
+      <td>19</td>
+      <td>1</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Chemical</td>
+      <td>Office</td>
+      <td>4</td>
+      <td>370</td>
+      <td>1480</td>
+    </tr>
+    <tr>
+      <th>11247</th>
+      <td>1004089</td>
+      <td>Reichenbach</td>
+      <td>P00171342</td>
+      <td>M</td>
+      <td>26-35</td>
+      <td>33</td>
+      <td>0</td>
+      <td>Haryana</td>
+      <td>Northern</td>
+      <td>Healthcare</td>
+      <td>Veterinary</td>
+      <td>3</td>
+      <td>367</td>
+      <td>1101</td>
+    </tr>
+    <tr>
+      <th>11248</th>
+      <td>1001209</td>
+      <td>Oshin</td>
+      <td>P00201342</td>
+      <td>F</td>
+      <td>36-45</td>
+      <td>40</td>
+      <td>0</td>
+      <td>Madhya Pradesh</td>
+      <td>Central</td>
+      <td>Textile</td>
+      <td>Office</td>
+      <td>4</td>
+      <td>213</td>
+      <td>852</td>
+    </tr>
+    <tr>
+      <th>11249</th>
+      <td>1004023</td>
+      <td>Noonan</td>
+      <td>P00059442</td>
+      <td>M</td>
+      <td>36-45</td>
+      <td>37</td>
+      <td>0</td>
+      <td>Karnataka</td>
+      <td>Southern</td>
+      <td>Agriculture</td>
+      <td>Office</td>
+      <td>3</td>
+      <td>206</td>
+      <td>618</td>
+    </tr>
+    <tr>
+      <th>11250</th>
+      <td>1002744</td>
+      <td>Brumley</td>
+      <td>P00281742</td>
+      <td>F</td>
+      <td>18-25</td>
+      <td>19</td>
+      <td>0</td>
+      <td>Maharashtra</td>
+      <td>Western</td>
+      <td>Healthcare</td>
+      <td>Office</td>
+      <td>3</td>
+      <td>188</td>
+      <td>564</td>
+    </tr>
+  </tbody>
+</table>
+<p>11239 rows × 14 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d509bad9-315f-4d08-9165-f9386c74fdf7')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d509bad9-315f-4d08-9165-f9386c74fdf7 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d509bad9-315f-4d08-9165-f9386c74fdf7');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-d0cf92ba-d014-41ba-8460-cdcfd1a08db2">
+  <button class="colab-df-quickchart" onclick="quickchart('df-d0cf92ba-d014-41ba-8460-cdcfd1a08db2')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-d0cf92ba-d014-41ba-8460-cdcfd1a08db2 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+  <div id="id_ebc6fbd4-272f-4d3d-86f2-ed45707d6f6b">
+    <style>
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    </style>
+    <button class="colab-df-generate" onclick="generateWithVariable('df')"
+            title="Generate code using this dataframe."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"/>
+  </svg>
+    </button>
+    <script>
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_ebc6fbd4-272f-4d3d-86f2-ed45707d6f6b button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('df');
+      }
+      })();
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:437}"
+id="eZU2PJhys1LJ" data-outputId="9ef417b4-2010-47a2-c0ad-a47fb8090e8b">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">#total amount/sales from top 10 states</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>sales<span class="op">=</span>df.groupby([<span class="st">&#39;Sales&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Amount&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>custom_color<span class="op">=</span>sns.color_palette(<span class="st">&#39;husl&#39;</span>,<span class="dv">10</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:( <span class="dv">18</span>,<span class="dv">5</span>)})</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>sales,x<span class="op">=</span><span class="st">&#39;Sales&#39;</span>,y<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,palette<span class="op">=</span>custom_color)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-52-45bf7d51674a&gt;:5: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=sales,x=&#39;Sales&#39;,y=&#39;Amount&#39;,palette=custom_color)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="52">
+<pre><code>&lt;Axes: xlabel=&#39;Sales&#39;, ylabel=&#39;Amount&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/c817d2ad6d8484079834b121415b4bb68280aa16.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:613}"
+id="4n0LGwG9vNcP" data-outputId="d4a53c51-4cbd-487b-e10e-7b2c64b07864">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>sales_state<span class="op">=</span>df.groupby([<span class="st">&#39;State&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Amount&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">18</span>,<span class="dv">5</span>)})</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>sales_state,x<span class="op">=</span><span class="st">&#39;State&#39;</span>,y<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,palette<span class="op">=</span><span class="st">&#39;rocket&#39;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-59-48aed3054e15&gt;:3: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=sales_state,x=&#39;State&#39;,y=&#39;Amount&#39;,palette=&#39;rocket&#39;)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="59">
+<pre><code>&lt;Axes: xlabel=&#39;State&#39;, ylabel=&#39;Amount&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/bf93e0dffc62e7bc8d6e50c31a72df114575abe6.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="JR5urvYH_pGv">
+<p>This graph shows that UP has highest amount and Bihar and gujarat
+have the lowest amount.</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:474}"
+id="wdT4YdmLwGY1" data-outputId="9bd06c12-ae8b-4a8c-d24b-502f76038fc7">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>ax<span class="op">=</span>sns.countplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;Marital_Status&#39;</span>,hue<span class="op">=</span><span class="st">&#39;Gender&#39;</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">7</span>,<span class="dv">5</span>)})</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bars <span class="kw">in</span> ax.containers:</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  ax.bar_label(bars)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/2783964147551ade6b1abb3a1f1ecaddd124481d.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="7PHWA-ekycuS">
+<p>People with 0 marriage status are more than people with 1 marriage
+status</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:507}"
+id="YQgyst9-xvBr" data-outputId="d76e101d-781e-4dd2-bfe4-0de18a1d6282">
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>sales_state<span class="op">=</span>df.groupby([<span class="st">&#39;Marital_Status&#39;</span>,<span class="st">&#39;Gender&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Amount&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">6</span>,<span class="dv">5</span>)})</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>sales_state,x<span class="op">=</span><span class="st">&#39;Marital_Status&#39;</span>,y<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,hue<span class="op">=</span><span class="st">&#39;Gender&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="63">
+<pre><code>&lt;Axes: xlabel=&#39;Marital_Status&#39;, ylabel=&#39;Amount&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/d0186309ddc19fe2ece3f48ac4197ee930acc20d.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:448}"
+id="kicJQhig1o7b" data-outputId="5c1a3682-2744-46d1-b336-4df19740ddd7">
+<div class="sourceCode" id="cb43"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">25</span>,<span class="dv">8</span>)})</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>ax<span class="op">=</span>sns.countplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;Occupation&#39;</span>)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bars <span class="kw">in</span> ax.containers:</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  ax.bar_label(bars)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/41a068138dd1adb936310a3c84f225464215d24c.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="Kf0l8vRH_5CF">
+<p>This graph shows that IT sector has the most number of people and
+agriculture have the lowest number of people.</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:403}"
+id="AYN5nU5m3duT" data-outputId="7e77adf9-48b4-4ce4-c1f9-ce8dc22c979c">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>sales_state<span class="op">=</span>df.groupby([<span class="st">&#39;Occupation&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Amount&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">20</span>,<span class="dv">5</span>)})</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>sales_state,x<span class="op">=</span><span class="st">&#39;Occupation&#39;</span>,y<span class="op">=</span><span class="st">&#39;Amount&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="67">
+<pre><code>&lt;Axes: xlabel=&#39;Occupation&#39;, ylabel=&#39;Amount&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/300dd8d67114802290a85facfbe4acb4925c3259.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="z2d-krI9AIoM">
+
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:494}"
+id="dVt2jXce57As" data-outputId="7004ab25-bb28-4be6-f6ab-43d70da8c3bf">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">30</span>,<span class="dv">5</span>)})</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>ax<span class="op">=</span>sns.countplot(data<span class="op">=</span>df,x<span class="op">=</span><span class="st">&#39;Product_Category&#39;</span>)</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bars <span class="kw">in</span> ax.containers:</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>  ax.bar_label(bars)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/a68db452892887514a3cd9d598dbe41bf4c8526e.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="vMZ4_8qF79eQ">
+<p>This graph shows that clothing and apparel are the products most sold
+where as Hand and power tools has least selling.</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:285}"
+id="FdQj9pwQ6hMV" data-outputId="7dee9d61-2007-4544-f564-32f648d96ecc">
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>sales_state<span class="op">=</span>df.groupby([<span class="st">&#39;Product_Category&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Amount&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Amount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">30</span>,<span class="dv">5</span>)})</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>sales_state,x<span class="op">=</span><span class="st">&#39;Product_Category&#39;</span>,y<span class="op">=</span><span class="st">&#39;Amount&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="74">
+<pre><code>&lt;Axes: xlabel=&#39;Product_Category&#39;, ylabel=&#39;Amount&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/c937bcf19867bd8c7ce36ac5128201e76debbb39.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="W_nXsK_1AQJ1">
+<p>This graph shows that food is the product category with highest
+amount.</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:409}"
+id="hjth-y4U8lul" data-outputId="7b12a0dc-fdff-4a1e-de58-6ddf96de472c">
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>sales_state<span class="op">=</span>df.groupby([<span class="st">&#39;Product_ID&#39;</span>],as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">&#39;Orders&#39;</span>].<span class="bu">sum</span>().sort_values(by<span class="op">=</span><span class="st">&#39;Orders&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(rc<span class="op">=</span>{<span class="st">&#39;figure.figsize&#39;</span>:(<span class="dv">25</span>,<span class="dv">5</span>)})</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>sales_state,x<span class="op">=</span><span class="st">&#39;Product_ID&#39;</span>,y<span class="op">=</span><span class="st">&#39;Orders&#39;</span>,palette<span class="op">=</span><span class="st">&#39;rocket&#39;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-76-2aa1588b4b5c&gt;:3: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(data=sales_state,x=&#39;Product_ID&#39;,y=&#39;Orders&#39;,palette=&#39;rocket&#39;)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="76">
+<pre><code>&lt;Axes: xlabel=&#39;Product_ID&#39;, ylabel=&#39;Orders&#39;&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_7739db12d83d419a89db147f34205e9d/fe5e50503130a784192514ff2f1fe78dfe8af236.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="kb7YYKXn-t12">
+<p>1.Univariate:It shows that females are more then men 2.Bivariate:This
+graph shows that females spend more amount than men. 3.This graph shows
+that the age group 26-35 have the highest spending whereas 0-17 have the
+least spending. 4.This graph shows that the age group 26-35 has spent
+the most amount and 0-17 has done the least spending. 5.This graph shows
+that UP has placed the most number of orders and Harayana and Gujarat
+have the least orders placed. 6.This graph shows that UP has highest
+amount and Bihar and gujarat have the lowest amount. 7.People with 0
+marriage status are more than people with 1 marriage status. 8.This
+graph shows that IT sector has the most number of people and agriculture
+have the lowest number of people.</p>
+<p>9.This graph shows that clothing and apparel are the products most
+sold where as Hand and power tools has least selling. 10.This graph
+shows that food is the product category with highest amount.</p>
+</div>
+<div class="cell code" data-collapsed="true" id="cbFBd1CC97A3">
+<div class="sourceCode" id="cb52"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># prompt: I want to conclude my analysis and want recommendation by analyzing the graphs above</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>Based on the provided analysis, here<span class="st">&#39;s a summary of key findings and recommendations:</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a><span class="er">**Key Findings:**</span></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a><span class="er">* **Female Dominance:** Females constitute the majority of customers and exhibit higher purchasing power compared to males.</span></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="er">* **Age Group 26-35:** This age group displays the highest spending and order volume.  The 0-17 age group shows the lowest.</span></span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a><span class="er">* **Geographic Concentration:** Uttar Pradesh (UP) leads in both order volume and total sales amount, while states like Bihar and Gujarat show lower figures.  Focus on UP as a high-potential market.</span></span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a><span class="er">* **Marital Status:**  Unmarried individuals form a larger customer segment compared to married individuals,  but the spending difference isn&#39;t significant enough to warrant targeted strategies.</span></span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a><span class="er">* **Occupation:** The IT sector dominates the customer base, while agriculture has the lowest representation.</span></span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a><span class="er">* **Product Categories:** Clothing and apparel are the top-selling product categories, while hand and power tools exhibit the lowest sales. Food leads in terms of total sales amount.</span></span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a><span class="er">* **Product ID:**  Further investigation into the top-performing product IDs (those with the highest order volumes) could reveal popular items or product lines that are driving sales.</span></span>
+<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-15"><a href="#cb52-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-16"><a href="#cb52-16" aria-hidden="true" tabindex="-1"></a><span class="er">**Recommendations:**</span></span>
+<span id="cb52-17"><a href="#cb52-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-18"><a href="#cb52-18" aria-hidden="true" tabindex="-1"></a><span class="er">1. **Targeted Marketing to Females:** Develop marketing campaigns tailored to female demographics, considering their higher purchasing propensity.</span></span>
+<span id="cb52-19"><a href="#cb52-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-20"><a href="#cb52-20" aria-hidden="true" tabindex="-1"></a><span class="er">2. **Focus on Age Group 26-35:** Direct marketing efforts and product recommendations toward the 26-35 age group,  leveraging their higher spending patterns.</span></span>
+<span id="cb52-21"><a href="#cb52-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-22"><a href="#cb52-22" aria-hidden="true" tabindex="-1"></a><span class="er">3. **Regional Strategy for UP:**  Invest in regional marketing and logistics in UP given its significant market share.  Explore opportunities to expand into other high-potential markets.</span></span>
+<span id="cb52-23"><a href="#cb52-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-24"><a href="#cb52-24" aria-hidden="true" tabindex="-1"></a><span class="er">4. **Product Optimization:**  Analyze the top-performing Product IDs to understand what makes them successful.  Explore opportunities to cross-promote or bundle these products.  Assess if there are possibilities to expand on the success of clothing and apparel, or identify opportunities to boost the sales of less popular products like hand and power tools.</span></span>
+<span id="cb52-25"><a href="#cb52-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-26"><a href="#cb52-26" aria-hidden="true" tabindex="-1"></a><span class="er">5. **IT Sector Engagement:**  Develop strategies for greater outreach and engagement with customers in the IT sector.</span></span>
+<span id="cb52-27"><a href="#cb52-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-28"><a href="#cb52-28" aria-hidden="true" tabindex="-1"></a><span class="er">6. **Monitor Performance:** Continuously monitor key metrics (sales, orders, customer demographics, product performance) to adapt strategies as needed.</span></span>
+<span id="cb52-29"><a href="#cb52-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-30"><a href="#cb52-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-31"><a href="#cb52-31" aria-hidden="true" tabindex="-1"></a><span class="er">**Further Analysis Suggestions:**</span></span>
+<span id="cb52-32"><a href="#cb52-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-33"><a href="#cb52-33" aria-hidden="true" tabindex="-1"></a><span class="er">* **Customer Segmentation:** Create more sophisticated customer segments (beyond gender and age) to target marketing efforts more effectively. Consider factors like location, occupation, marital status and purchase history.</span></span>
+<span id="cb52-34"><a href="#cb52-34" aria-hidden="true" tabindex="-1"></a><span class="er">* **Product Affinity:** Analyze which products are often bought together.  Use this information to create attractive bundles or cross-promotion offers.</span></span>
+<span id="cb52-35"><a href="#cb52-35" aria-hidden="true" tabindex="-1"></a><span class="er">* **Price Sensitivity:**  Investigate price elasticity for different product categories and customer segments.</span></span>
+<span id="cb52-36"><a href="#cb52-36" aria-hidden="true" tabindex="-1"></a><span class="er">* **Seasonality:**  Analyze if there are any seasonal trends in purchasing behavior.</span></span>
+<span id="cb52-37"><a href="#cb52-37" aria-hidden="true" tabindex="-1"></a><span class="er">* **A/B Testing:** Test different marketing strategies or product offerings with different segments to determine effectiveness.</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="_oXdTR8aAvzo">
+
+</div>
+</body>
+</html>
